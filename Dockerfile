@@ -1,7 +1,7 @@
 FROM postgres:9.6.15-alpine
+MAINTAINER zhangz@goodrain.com
 
 VOLUME /var/lib/postgresql/data
-
 
 COPY ./docker-healthcheck.sh /docker-healthcheck.sh
 COPY ./initial-notaryserver.sql /docker-entrypoint-initdb.d/
