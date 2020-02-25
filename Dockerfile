@@ -1,5 +1,7 @@
 FROM postgres:9.6.15-alpine
 MAINTAINER zhangz@goodrain.com
+ENV TZ Aisa/Shanghai
+ENV LANG en_US.utf8
 
 VOLUME /var/lib/postgresql/data
 
